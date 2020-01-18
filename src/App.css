@@ -1,38 +1,142 @@
-.App {
+div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+#wraper {
+    animation: wrapper 3s forwards;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+@keyframes wrapper {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#bg {
+  animation: bg 60s linear infinite;
+  backface-visibility: hidden;
+  transform: translate3d(0,0,0);
+  background: #f2a0b8 url(./Images/bg1.jpg) bottom left;
+  background-repeat: repeat-x;
+  height: 100%;
+  left: 0;
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  background-size: 2250px auto;
+  width: 6750px;
+}
+
+@keyframes bg {
+  0% {
+    transform: translate3d(0,0,0);
+  }
+  100% {
+    transform: translate3d(-412.5px,0,0);
+  }
+}
+
+#overlay {
+  animation: overlay 1.5s 1.5s forwards;
+    background-attachment: fixed, fixed;
+    background-image: url(./Images/overlay-pattern.png), url(./Images/overlay.svg);
+    background-position: top left, center center;
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+@keyframes overlay {
+  0% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+#main {
+  height: 100%;
+  left: 0;
+  position: fixed;
   text-align: center;
+  top: 0;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#main::before {
+  content: '';
+    display: inline-block;
+    height: 100%;
+    margin-right: 0;
+    vertical-align: middle;
+    width: 1px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#header {
+  animation: header 1s 2.25s forwards;
+  transform: translate3d(0,0,0);
+    cursor: default;
+    display: inline-block;
+    opacity: 0;
+    position: relative;
+    text-align: center;
+    top: -1em;
+    vertical-align: middle;
+    width: 90%;
+}
+
+@keyframes header {
+  0% {
+    transform: translate3d(0,1em,0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate3d(0,0,0);
+    opacity: 1;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+@media screen and (max-width: 1680px) {
+  #bg {
+      background-size: 3000px auto;
+      width: 4500px;
+  } }
 
-.App-link {
-  color: #61dafb;
-}
+  @media screen and (max-width: 1280px) {
+    #bg {
+        background-size: 1500px auto;
+        width: 2250px;
+    } }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+@media screen and (max-width: 736px) {
+#bg {
+    background-size: 600px auto;
+    width: 900px;
+} }
+
+@media (max-width: 480px) {
+  #bg {
+      background-size: 825px auto;
+      width: 1237.5px;
+  } }

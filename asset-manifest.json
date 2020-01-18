@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/landingpage/static/css/main.53235121.chunk.css",
+    "main.js": "/landingpage/static/js/main.658231e7.chunk.js",
+    "main.js.map": "/landingpage/static/js/main.658231e7.chunk.js.map",
+    "runtime-main.js": "/landingpage/static/js/runtime-main.4f098a2f.js",
+    "runtime-main.js.map": "/landingpage/static/js/runtime-main.4f098a2f.js.map",
+    "static/js/2.2b9c4546.chunk.js": "/landingpage/static/js/2.2b9c4546.chunk.js",
+    "static/js/2.2b9c4546.chunk.js.map": "/landingpage/static/js/2.2b9c4546.chunk.js.map",
+    "index.html": "/landingpage/index.html",
+    "precache-manifest.e0c71d5b3ff8e2f719ec0b7bcee3f8a7.js": "/landingpage/precache-manifest.e0c71d5b3ff8e2f719ec0b7bcee3f8a7.js",
+    "service-worker.js": "/landingpage/service-worker.js",
+    "static/css/main.53235121.chunk.css.map": "/landingpage/static/css/main.53235121.chunk.css.map",
+    "static/js/2.2b9c4546.chunk.js.LICENSE": "/landingpage/static/js/2.2b9c4546.chunk.js.LICENSE",
+    "static/media/App.css": "/landingpage/static/media/overlay.8a09a2d9.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4f098a2f.js",
+    "static/js/2.2b9c4546.chunk.js",
+    "static/css/main.53235121.chunk.css",
+    "static/js/main.658231e7.chunk.js"
+  ]
+}

@@ -1,3 +1,26 @@
+h1 {
+  font-family: 'Yatra One', cursive;
+  font-size: min(max(36px, 4vw),68px);
+  font-weight: 700;
+  margin: 0px;
+  padding: 0px;
+}
+
+p {
+  font-size: min(max(12px, 4vw),14px);
+  font-weight: 300;
+  font-family:'Open Sans', sans-serif;
+  opacity: 0.75;
+}
+
+h3 {
+  font-size: min(max(14px, 4vw),16px);
+  font-family: 'Yatra One', cursive;
+  font-weight: 400;
+  margin: 0px;
+  opacity: 0.75;
+}
+
 div {
   margin: 0;
   padding: 0;
@@ -5,6 +28,89 @@ div {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+}
+
+nav {
+  margin: 1.5em 0 0 0;
+  vertical-align: baseline;
+}
+
+
+@media screen and (max-width: 480px) {
+#header nav {
+    padding: 0 1em;
+}
+}
+
+ul {
+    list-style: none;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px
+}
+
+li:nth-child(1) {
+  animation-delay: 2.5s;
+}
+li:nth-child(2) {
+  animation-delay: 2.75s;
+}
+li:nth-child(3) {
+  animation-delay: 3s;
+}
+li:nth-child(4) {
+  animation-delay: 3.25s;
+}
+li:nth-child(5) {
+  animation-delay: 3.5s;
+}
+
+li {
+  animation: nav-icons 0.5s ease-in-out forwards;
+  backface-visibility: hidden;
+  transform: translate3d(0,0,0);
+    display: inline-block;
+    height: 5.35em;
+    line-height: 5.885em;
+    opacity: 0;
+    position: relative;
+    top: 0;
+    width: 5em;
+}
+
+@keyframes nav-icons {
+  0% {
+    transform: translate3d(0,1em,0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0,0,0);
+    opacity: 1;
+  }
+}
+
+a {
+  border: 0;
+  display: inline-block;
+  position: relative;
+  font-size: 38px;
+}
+
+a:before {
+  transition: all 0.2s ease-in-out;
+    border-radius: 100%;
+    border: solid 1px #fff;
+    display: block;
+    font-size: 1.75em;
+    height: 2.5em;
+    line-height: 2.5em;
+    position: relative;
+    text-align: center;
+    top: 0;
+    width: 2.5em;
 }
 
 #wraper {
@@ -140,3 +246,15 @@ div {
       background-size: 825px auto;
       width: 1237.5px;
   } }
+
+  #footer {
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
+    bottom: 0;
+    cursor: default;
+    height: 6em;
+    left: 0;
+    line-height: 8em;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
